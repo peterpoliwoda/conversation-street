@@ -1,5 +1,5 @@
 {
-  "name": "watson-assistant",
+  "name": "conversation-street",
   "version": "1.0.0",
   "description": "Reverse the roles of a chatbot to make him talk to you instead.",
   "main": "app.js",
@@ -8,7 +8,12 @@
     "test": "eslint ."
   },
   "author": "Peter Poliwoda @peterpoliwoda",
+  "homepage": "https://peterpoliwoda.me/",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piotrekkmt/conversation-street"
+  },
   "dependencies": {
     "colors": "^1.3.3",
     "dotenv": "^6.2.0",
