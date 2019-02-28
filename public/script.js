@@ -42,7 +42,9 @@ recognition.addEventListener('error', (e) => {
     outputBot.textContent = 'Error: ' + e.error;
 });
 
+/* eslint-disable no-unused-vars */
 function synthVoice(text) {
+/* eslint-enable no-unused-vars */
     console.log('Speaking', text);
     const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance();
@@ -55,7 +57,7 @@ socket.on('bot reply', function(replyText) {
     if (replyText == '') replyText = '(No answer...)';
     outputBot.textContent = replyText;
 
-    // Uncomment below to see how Chrome sounds on it's own
+    // Uncomment below to see how Chrome sounds on its own
     // synthVoice(replyText);
     const audio = new Audio('speech.mp3?nocache=' + new Date().getTime());
     audio.play();
