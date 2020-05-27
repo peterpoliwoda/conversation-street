@@ -1,6 +1,6 @@
 {
     "name": "conversation-street",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Reverse the roles of a chatbot to make him talk to you instead.",
     "main": "app.js",
     "scripts": {
@@ -12,7 +12,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/piotrekkmt/conversation-street"
+        "url": "https://github.com/peterpoliwoda/conversation-street"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
