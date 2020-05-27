@@ -27,6 +27,6 @@
         "watson-developer-cloud": "^3.18.1"
     },
     "devDependencies": {
-        "eslint": "^5.14.1"
+        "eslint": "^5.16.0"
     }
 }
