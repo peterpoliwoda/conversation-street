@@ -1,6 +1,6 @@
 {
     "name": "conversation-street",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Reverse the roles of a chatbot to make him talk to you instead.",
     "main": "app.js",
     "scripts": {
