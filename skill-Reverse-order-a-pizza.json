@@ -1,6 +1,112 @@
 {
-  "name": "Reverse order a pizza",
   "intents": [
+    {
+      "intent": "cash_or_card",
+      "examples": [
+        {
+          "text": "Can you pay with cash?"
+        },
+        {
+          "text": "Card or cash?"
+        },
+        {
+          "text": "Cash or card?"
+        },
+        {
+          "text": "Would you like to pay cash or card?"
+        },
+        {
+          "text": "Would you like to pay with a credit card?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "confirm_time",
+      "examples": [
+        {
+          "text": "around a half an hour"
+        },
+        {
+          "text": "give it about half and hour"
+        },
+        {
+          "text": "give or take 20 minutes"
+        },
+        {
+          "text": "it will be around 20 minutes"
+        },
+        {
+          "text": "that will be 20 minutes"
+        }
+      ]
+    },
+    {
+      "intent": "delivery_place_greeting",
+      "examples": [
+        {
+          "text": "Dominos Pizza, how can I help you?"
+        },
+        {
+          "text": "Go for Peter."
+        },
+        {
+          "text": "Hello?"
+        },
+        {
+          "text": "Hello, Pizza Hut."
+        },
+        {
+          "text": "Hello, Pizza Hut. How can I help you?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "get_location",
+      "examples": [
+        {
+          "text": "address please"
+        },
+        {
+          "text": "Address please?"
+        },
+        {
+          "text": "Can I get the address please?"
+        },
+        {
+          "text": "can you tell me where you live?"
+        },
+        {
+          "text": "What's the address?"
+        },
+        {
+          "text": "Where are you located?"
+        },
+        {
+          "text": "where do you live"
+        },
+        {
+          "text": "where do you live/"
+        },
+        {
+          "text": "Where do you live?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "is_that_all",
+      "examples": [
+        {
+          "text": "Is that all?"
+        },
+        {
+          "text": "Is that it?"
+        }
+      ],
+      "description": ""
+    },
     {
       "intent": "price_confirmation",
       "examples": [
@@ -14,76 +120,10 @@
           "text": "That will be 10 euro and 50 cents"
         },
         {
-          "text": "that will be ten euro and fifty cents"
-        },
-        {
           "text": "That will be 21 euros and it'll take about 40 min."
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "is_that_all",
-      "examples": [
-        {
-          "text": "Is that it?"
         },
         {
-          "text": "Is that all?"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "get_location",
-      "examples": [
-        {
-          "text": "What's the address?"
-        },
-        {
-          "text": "Address please?"
-        },
-        {
-          "text": "address please"
-        },
-        {
-          "text": "can you tell me where you live?"
-        },
-        {
-          "text": "where do you live/"
-        },
-        {
-          "text": "where do you live"
-        },
-        {
-          "text": "Where do you live?"
-        },
-        {
-          "text": "Can I get the address please?"
-        },
-        {
-          "text": "Where are you located?"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "delivery_place_greeting",
-      "examples": [
-        {
-          "text": "Hello?"
-        },
-        {
-          "text": "Hello, Pizza Hut."
-        },
-        {
-          "text": "Go for Peter."
-        },
-        {
-          "text": "Dominos Pizza, how can I help you?"
-        },
-        {
-          "text": "Hello, Pizza Hut. How can I help you?"
+          "text": "that will be ten euro and fifty cents"
         }
       ],
       "description": ""
@@ -92,81 +132,29 @@
       "intent": "type_of_pizza",
       "examples": [
         {
-          "text": "What's your order please?"
-        },
-        {
-          "text": "What would you like?"
+          "text": "What can I get you?"
         },
         {
           "text": "What kind of pizza would you like to order?"
         },
         {
-          "text": "What can I get you?"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "cash_or_card",
-      "examples": [
-        {
-          "text": "Would you like to pay cash or card?"
+          "text": "What's your order please?"
         },
         {
-          "text": "Cash or card?"
-        },
-        {
-          "text": "Would you like to pay with a credit card?"
-        },
-        {
-          "text": "Can you pay with cash?"
-        },
-        {
-          "text": "Card or cash?"
+          "text": "What would you like?"
         }
       ],
       "description": ""
     }
   ],
   "entities": [],
-  "language": "en",
   "metadata": {
     "api_version": {
-      "major_version": "v1",
-      "minor_version": "2018-09-20"
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
     }
   },
-  "description": "",
   "dialog_nodes": [
-    {
-      "type": "standard",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Hi, yes, I'd like to order a pizza please."
-              },
-              {
-                "text": "Hi there, I'd like to order a pizza."
-              },
-              {
-                "text": "Are you guys open already? I'd like to order a pizza."
-              },
-              {
-                "text": "Hi Peter, I'd like to get some pizza."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "random"
-          }
-        ]
-      },
-      "metadata": {},
-      "conditions": "#delivery_place_greeting",
-      "dialog_node": "node_1_1550941736251",
-      "previous_sibling": "node_3_1550939908035"
-    },
     {
       "type": "standard",
       "title": "Anything else",
@@ -201,18 +189,24 @@
           {
             "values": [
               {
-                "text": "Great. Uhm.. I'll see you soon."
+                "text": "I'd like a large Hawaiian with extra pineapple on top."
+              },
+              {
+                "text": "I'd like a small personal pepperoni, please."
+              },
+              {
+                "text": "Two large margaritas with some fresh basil please."
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
           }
         ]
       },
       "metadata": {},
-      "conditions": "#price_confirmation",
-      "dialog_node": "node_4_1550940225958",
-      "previous_sibling": "node_1_1550941736251"
+      "conditions": "#type_of_pizza",
+      "dialog_node": "node_1_1550939629850",
+      "previous_sibling": "Welcome"
     },
     {
       "type": "standard",
@@ -221,7 +215,36 @@
           {
             "values": [
               {
-                "text": "It's Number 4 St. Stephen's green, just down the road from Intercom."
+                "text": "Hi, yes, I'd like to order a pizza please."
+              },
+              {
+                "text": "Hi there, I'd like to order a pizza."
+              },
+              {
+                "text": "Are you guys open already? I'd like to order a pizza."
+              },
+              {
+                "text": "Hi Peter, I'd like to get some pizza."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#delivery_place_greeting",
+      "dialog_node": "node_1_1550941736251",
+      "previous_sibling": "node_5_1612951494727"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It's Number 4 St. Stephen's green, just down the road from IBM Ireland."
               },
               {
                 "text": "55 O'Connell Street."
@@ -236,6 +259,32 @@
       "conditions": "#get_location",
       "dialog_node": "node_2_1550939751799",
       "previous_sibling": "node_1_1550939629850"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cash please."
+              },
+              {
+                "text": "I'll pay with cash."
+              },
+              {
+                "text": "I'll pay on arrival."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#cash_or_card",
+      "dialog_node": "node_2_1550944882693",
+      "previous_sibling": "node_4_1550940225958"
     },
     {
       "type": "standard",
@@ -273,13 +322,7 @@
           {
             "values": [
               {
-                "text": "Cash please."
-              },
-              {
-                "text": "I'll pay with cash."
-              },
-              {
-                "text": "I'll pay on arrival."
+                "text": "Great. Uhm.. I'll see you soon."
               }
             ],
             "response_type": "text",
@@ -288,35 +331,29 @@
         ]
       },
       "metadata": {},
-      "conditions": "#cash_or_card",
-      "dialog_node": "node_2_1550944882693",
-      "previous_sibling": "node_4_1550940225958"
+      "conditions": "#price_confirmation",
+      "dialog_node": "node_4_1550940225958",
+      "previous_sibling": "node_1_1550941736251"
     },
     {
       "type": "standard",
+      "title": "Confirm time",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "I'd like a large Hawaiian with extra pineapple on top."
-              },
-              {
-                "text": "I'd like a small personal pepperoni, please."
-              },
-              {
-                "text": "Two large margaritas with some fresh basil please."
+                "text": "Thank you. Can't wait!"
               }
             ],
             "response_type": "text",
-            "selection_policy": "random"
+            "selection_policy": "sequential"
           }
         ]
       },
-      "metadata": {},
-      "conditions": "#type_of_pizza",
-      "dialog_node": "node_1_1550939629850",
-      "previous_sibling": "Welcome"
+      "conditions": "#confirm_time",
+      "dialog_node": "node_5_1612951494727",
+      "previous_sibling": "node_3_1550939908035"
     },
     {
       "type": "standard",
@@ -329,7 +366,7 @@
                 "text": "Hi there, I would like to order a pizza for delivery please"
               },
               {
-                "text": "Hello, I'd like to order some pizzas for the Node JS Meetup at Intercom"
+                "text": "Hello, I'd like to order some pizzas for the Node JS Meetup at IBM Ireland"
               }
             ],
             "response_type": "text",
@@ -342,7 +379,6 @@
       "dialog_node": "Welcome"
     }
   ],
-  "workspace_id": "ba71ec42-9d45-4df7-bacd-a8da8f6e0570",
   "counterexamples": [],
   "system_settings": {
     "tooling": {
@@ -350,5 +386,7 @@
     }
   },
   "learning_opt_out": false,
-  "status": "Available"
+  "name": "Reverse order a pizza",
+  "language": "en",
+  "description": ""
 }

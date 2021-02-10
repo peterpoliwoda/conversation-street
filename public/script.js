@@ -59,6 +59,9 @@ socket.on('bot reply', function(replyText) {
 
     // Uncomment below to see how Chrome sounds on its own
     // synthVoice(replyText);
-    const audio = new Audio('speech.mp3?nocache=' + new Date().getTime());
-    audio.play();
+    let audio = new Audio('speech.wav?nocache=' + new Date().getTime());
+    audio.addEventListener('loadeddata', () => {
+        console.log('audio loaded', audio);
+        audio.play();
+    });
 });
